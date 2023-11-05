@@ -1,0 +1,14 @@
+{
+  "name": "qa_automation",
+  "version": "1.0.0",
+  "description": "QA automation course",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olena Klymenko",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.4.0"
+  }
+}
