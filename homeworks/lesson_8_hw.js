@@ -24,7 +24,7 @@ console.log(Employee.compareSalary(dev, dev2)); // виведе salaries are equ
    const newDev = new Dev(1, 3000);
    // ваш код
   
-   // Закоментквали код, що видаэ помилку TypeError: Cannot assign to read only property 'id' of object '#<Dev>'
+   // Закоментувала код, що видає помилку TypeError: Cannot assign to read only property 'id' of object '#<Dev>'
    // бо запиняється на цьому виведення подальше
    //Object.freeze(newDev);
 
