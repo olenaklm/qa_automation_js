@@ -26,10 +26,15 @@ console.log(Employee.compareSalary(dev, dev2)); // виведе salaries are equ
   
    // Закоментувала код, що видає помилку TypeError: Cannot assign to read only property 'id' of object '#<Dev>'
    // бо запиняється на цьому виведення подальше
-   //Object.freeze(newDev);
+  //  Object.defineProperty(newDev, 'id', {
+  //   value: 1,
+  //   writable: false,
+  //   configurable: false 
+  // });
 
-//   newDev.id = 15; // видасть помилку TypeError: Cannot assign to read only property 'id' of object '#<Dev>'
-//   delete newDev.id; // видасть помилку TypeError: Cannot delete property 'id' of #<Dev>
+  //newDev.id = 15; // видасть помилку TypeError: Cannot assign to read only property 'id' of object '#<Dev>'
+  //newDev.salary = 2130
+  //delete newDev.id; // видасть помилку TypeError: Cannot delete property 'id' of #<Dev>
    for (let key in newDev) {
      console.log(newDev[key]); // виведе почергово 1 та 3000
    }
